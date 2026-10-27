@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matrix · Tendex market research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/research.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <p class="draft">Research file. 27 October 2026. <strong>Internal.</strong> Pools use different units. Do not add them into one market.</p>
+  <header class="nav"><a class="brand" href="index.html"><strong>Tendex</strong><small>Market research</small></a></header>
+  <nav class="chapters" aria-label="Report">
+    <a href="index.html">Brief</a><a href="matrix.html" aria-current="page">Matrix</a><a href="sizing.html">Sizing</a>
+    <a href="analogues.html">Analogues</a><a href="field.html">Field</a><a href="read.html">Read</a>
+    <a href="control-room.html">Ledger</a><a href="sources.html">Sources</a>
+  </nav>
+  <main class="wrap" id="content">
+    <p class="kicker">Place, then problem, then the thing they might buy</p>
+    <h1>Fourteen areas. Three in the first test.</h1>
+    <p class="lede">Each card is a different pool. A user count, a venue, a notional book and a price band are not the same object. “Now” means the public Tendex page could be useful in a thirty-day test. It does not mean anyone has paid.</p>
+    <div class="filters">
+      <label class="f">Place<select id="place"><option value="">All</option></select></label>
+      <label class="f">Problem<select id="problem"><option value="">All</option></select></label>
+      <label class="f">Fit<select id="fit"><option value="">All</option><option>now</option><option>later</option><option>no</option></select></label>
+      <label class="f">Search<input id="q" type="search" placeholder="Forum, sports, oracle" /></label>
+    </div>
+    <div class="views">
+      <button class="view" id="v-col" aria-pressed="true" type="button">Columns</button>
+      <button class="view" id="v-table" aria-pressed="false" type="button">Table</button>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div id="board"></div>
+    <footer class="site-foot"><div>Click a card. Escape closes it.</div><nav><a href="sizing.html">Sizing</a><a href="sources.html">Sources</a></nav></footer>
+  </main>
+  <script>
+    const areas = [
+      {id:"US-01", name:"Attention prosumer", place:"United States", problem:"See the oracle", fit:"now", pool:"unpublished", unit:"users", soph:4,
+        situation:"A person who already has a view on whether a topic’s relevance will rise, and wants the price next to the series the contract settles on.",
+        wrong:"A sports terminal, a meme chart, or a Google Trends tab with no tape.",
+        want:"One axis: price, attention, book and trades. More than one venue, labelled.",
+        offer:"The public Tendex page describes this. The marketing demo prints zeros. No price is listed.",
+        evidence:"Primary site, 27 Oct 2026. User count is a gap.",
+        limit:"Useful only where a real attention contract exists. Forum is still simulated."},
+      {id:"US-02", name:"Prediction desk", place:"United States", problem:"Buy the data", fit:"later", pool:"crowded", unit:"substitutes", soph:5,
+        situation:"A trader or builder who already pays for normalised Kalshi and Polymarket history, whale tags, or a better ticket.",
+        wrong:"Another dashboard that repeats the venue’s own page.",
+        want:"One schema, a tape they can replay, and an API. Attention is a nice extra, not the job.",
+        offer:"Oddpool listed $30 and $100, then closed new subscriptions. Polysights, Hashdive, Stand and Betmoar already occupy the workflow.",
+        evidence:"Oddpool pricing page. Trade press for the other terminals.",
+        limit:"No subscriber counts. Do not treat a feature list as revenue."},
+      {id:"US-03", name:"Sports contract trader", place:"United States", problem:"Wrong market", fit:"no", pool:"majority of notional", unit:"not the buyer", soph:2,
+        situation:"The person behind most of the 2026 volume boom. They are trading games.",
+        wrong:"An attention index, a cultural hedge, a Bloomberg analogy.",
+        want:"A fast sports ticket. Kalshi and Polymarket already give them one.",
+        offer:"Tendex should not acquire this user. The message would be false.",
+        evidence:"Pew, 23 Sep 2026 and 27 May 2026. Sports is the largest topic; 80% of Kalshi volume since July 2024.",
+        limit:"Notional is face value, not cash staked."},
+      {id:"US-04", name:"Quant or data buyer", place:"United States", problem:"Buy the data", fit:"later", pool:"unknown", unit:"desks", soph:5,
+        situation:"A desk that already buys event probabilities as a sentiment feed. ICE is distributing Polymarket’s.",
+        wrong:"Assuming they will buy a startup terminal for a market that is still on paper.",
+        want:"History, a schema, uptime, and a right to use the series.",
+        offer:"Possible later, as an API, if Tendex holds a durable archive the venue will not sell itself.",
+        evidence:"ICE 8-K, 7 Oct 2025: up to $2bn, and ICE as distributor of Polymarket event data.",
+        limit:"That deal is about event contracts, not Forum’s index."},
+      {id:"US-05", name:"Brand hedger", place:"United States", problem:"Hedge a brand", fit:"no", pool:"unnamed", unit:"customers", soph:5,
+        situation:"A company that loses money when a trend breaks, and wants a contract that offsets it.",
+        wrong:"A retail terminal sold as if the hedge already exists.",
+        want:"A settlement series that tracks the exposure, enough liquidity to get out, and a regulated venue.",
+        offer:"Forum describes the use. No repeat named hedger was found.",
+        evidence:"Forum docs and YC profile, company claim. Gap on customers.",
+        limit:"Attention and sales do not have to move together."},
+      {id:"VN-01", name:"Forum paper trader", place:"Forum", problem:"Trade the venue", fit:"now", pool:"unpublished", unit:"simulated accounts", soph:3,
+        situation:"Someone using Forum’s fake $1,000 balance to long or short a topic’s Attention Index.",
+        wrong:"Reporting their volume as revenue, or their Discord join as demand.",
+        want:"A clearer view of why the index moved. Maybe. They may be fine inside Forum.",
+        offer:"A Tendex watchlist can be a learning cohort. It cannot be booked as economic value.",
+        evidence:"YC profile: fake money, $1,000. Docs: pending DCM/DCO. The ~80 Discord figure is a meeting claim.",
+        limit:"Contest rules from February 2026 are historical. Do not describe a live $500 weekly prize."},
+      {id:"VN-02", name:"Noise participant", place:"Noise", problem:"Trade the venue", fit:"later", pool:"1,300", unit:"testnet users, company claim", soph:3,
+        situation:"People who used the 2025 invite-only testnet, or who would buy trends on the rewritten product.",
+        wrong:"Quoting 62% retention as if the current product were the same one.",
+        want:"To express a view on relevance. The venue now says you buy the trend.",
+        offer:"A terminal in front of Noise only matters if Noise will licence the series and the tape.",
+        evidence:"Noise post, 14 Jan 2026, with an editor’s note that the product changed. Paradigm led $7.1m.",
+        limit:"1,300 users, 14 markets, 62% still active, 17-minute sessions: company claims about a retired design."},
+      {id:"VN-03", name:"Zora creator market", place:"Zora", problem:"Trade the venue", fit:"no", pool:"own tools", unit:"substitute", soph:3,
+        situation:"A creator or trader already inside Zora’s content markets.",
+        wrong:"Treating a creator coin as an attention index.",
+        want:"The venue already ships P&L, a CLI and an in-app research agent.",
+        offer:"Not a Tendex buyer unless Zora’s own tools fail a job Tendex can name.",
+        evidence:"Zora product pages, company claim. Prior Notion pass.",
+        limit:"No comparable liquidity figure opened this pass."},
+      {id:"SUB-01", name:"Meme trader", place:"Crypto", problem:"Wrong market", fit:"no", pool:"adjacent", unit:"not the buyer", soph:2,
+        situation:"Someone trading a token whose price is the attention.",
+        wrong:"Calling that the next step after meme coins and then selling them a research seat for a different instrument.",
+        want:"A fast coin. They already have one.",
+        offer:"Do not inherit the ‘evolution of meme coins’ line into the Forum brief.",
+        evidence:"Meeting claim, 20 Oct 2026. The instruments are not the same.",
+        limit:"A token can be popular and still not track an external index."},
+      {id:"SUB-02", name:"Trends power user", place:"Global", problem:"See the oracle", fit:"no", pool:"free", unit:"substitute", soph:2,
+        situation:"A marketer or trader who already pulls Google Trends for a topic.",
+        wrong:"Charging them for a chart they can open for nothing.",
+        want:"The series, free. They do not want a tape unless they are already in a contract.",
+        offer:"Trends is an input, not the product. Tendex only earns a fee when the series is tied to a tradable contract and a book.",
+        evidence:"Google Trends is public. Da, Engelberg, Gao used search volume as a retail-attention proxy, 2004–2008.",
+        limit:"Trends is not a licensed oracle. Terms and revision risk sit with Leo, unmarked."},
+      {id:"SUB-03", name:"Crypto mindshare reader", place:"Crypto", problem:"See the oracle", fit:"no", pool:"Kaito and peers", unit:"substitute", soph:3,
+        situation:"A crypto user who already reads mindshare dashboards.",
+        wrong:"Rebuilding Kaito and calling it a terminal for Forum.",
+        want:"Narrative heat inside crypto. Different coverage, different buyer.",
+        offer:"Leave it as a neighbouring signal. Noise’s testnet used Kaito data; that does not make Kaito’s user Tendex’s user.",
+        evidence:"The Block, 14 Jan 2026, quoting Noise’s founder on Kaito data.",
+        limit:"Kaito price and user counts were not opened."},
+      {id:"AU-01", name:"Australian referrer", place:"Australia", problem:"Wrong market", fit:"no", pool:"constrained", unit:"regulatory", soph:4,
+        situation:"A growth operator in Australia who can introduce traders, including into crypto and iGaming circles.",
+        wrong:"A KOL path that sends Australians into Polymarket, or that treats ‘we are only a terminal’ as a legal conclusion.",
+        want:"A lawful next step. Moneysmart says no prediction-market operator is licensed as a financial market here.",
+        offer:"Distribution tests stay inside a venue and a geography the venue is allowed to serve. The US is the live book. Australia is not the shortcut.",
+        evidence:"Moneysmart, updated 3 Aug 2026. ASIC binary-option ban for retail. ACMA has treated at least one prediction venue as gambling.",
+        limit:"This is not a legal opinion. Referral copy still needs a human review before anyone is paid to post."},
+      {id:"PT-01", name:"Forum as a partner", place:"Forum", problem:"Trade the venue", fit:"now", pool:"one company", unit:"partner, not users", soph:4,
+        situation:"Owen Botkin and Joseph Thomas. Two-person YC company. Simulated exchange. They may or may not want help acquiring the right paper-traders.",
+        wrong:"Leading with influencers, YC loyalty, or a promise of whales.",
+        want:"Unknown until they name the bottleneck. Candidates: the right users, repeat use, a data permission, or nothing from an outside terminal.",
+        offer:"One discovery conversation. One segment. One definition of a useful action. No four-track delivery promise.",
+        evidence:"YC profile and Forum docs. Partnership willingness is a gap.",
+        limit:"Friendly interest is not a price. YC does not owe a complement a cheque."},
+      {id:"PT-02", name:"Institution named in the meeting", place:"United States", problem:"Buy the data", fit:"no", pool:"0 observed", unit:"logos", soph:5,
+        situation:"Jane Street, Jump, Susquehanna. Real firms. Jump sponsored a Forum student contest. Susquehanna makes markets on Kalshi.",
+        wrong:"Putting their names on a Tendex slide as the first buyer.",
+        want:"A feed and a history, if they want anything. A student-contest sponsor is not a software contract.",
+        offer:"Do not sell to them in the first thirty days.",
+        evidence:"Meeting claim for the target list. Susquehanna’s Kalshi role is adjacent and real. Jump’s contest role is not a purchase.",
+        limit:"No Tendex evaluation, owner, or budget was found."}
+    ];
+
+    const place = document.getElementById("place");
+    const problem = document.getElementById("problem");
+    const fit = document.getElementById("fit");
+    const q = document.getElementById("q");
+    const board = document.getElementById("board");
+    const kpis = document.getElementById("kpis");
+    [...new Set(areas.map(a => a.place))].forEach(v => place.add(new Option(v, v)));
+    [...new Set(areas.map(a => a.problem))].forEach(v => problem.add(new Option(v, v)));
+
+    function selected() {
+      const query = q.value.trim().toLowerCase();
+      return areas.filter(a =>
+        (!place.value || a.place === place.value) &&
+        (!problem.value || a.problem === problem.value) &&
+        (!fit.value || a.fit === fit.value) &&
+        (!query || (a.name + a.situation + a.offer + a.id).toLowerCase().includes(query))
+      );
+    }
+
+    function draw() {
+      const rows = selected();
+      const now = rows.filter(a => a.fit === "now").length;
+      kpis.innerHTML = `
+        <div class="kpi"><b>${rows.length}</b><span>Areas in view</span></div>
+        <div class="kpi"><b>${now}</b><span>Fit for a first test</span></div>
+        <div class="kpi"><b>${rows.filter(a => a.fit === "no").length}</b><span>Do not acquire</span></div>
+        <div class="kpi"><b>Not summed</b><span>Pools are different units</span></div>`;
+      if (document.getElementById("v-table").getAttribute("aria-pressed") === "true") {
+        board.innerHTML = `<div class="table-wrap"><table><thead><tr><th>ID</th><th>Area</th><th>Place</th><th>Problem</th><th>Fit</th><th>Pool</th></tr></thead><tbody>
+          ${rows.map(a => `<tr><td>${a.id}</td><td><button class="area" data-id="${a.id}" style="border:0;padding:0">${a.name}</button></td><td>${a.place}</td><td>${a.problem}</td><td><span class="fit ${a.fit}">${a.fit}</span></td><td>${a.pool}</td></tr>`).join("")}
+        </tbody></table></div>`;
+      } else {
+        const cols = ["See the oracle", "Trade the venue", "Buy the data", "Hedge a brand", "Wrong market"];
+        board.innerHTML = `<div class="columns">${cols.map(c => `<section class="col"><h3>${c}</h3>${rows.filter(a => a.problem === c).map(card).join("") || "<p class='note'>None in view.</p>"}</section>`).join("")}</div>`;
+      }
+      board.querySelectorAll("[data-id]").forEach(btn => btn.addEventListener("click", () => open(btn.dataset.id)));
+    }
+    function card(a) {
+      return `<button class="area" data-id="${a.id}"><span class="id">${a.id}</span> <span class="fit ${a.fit}">${a.fit}</span><strong style="display:block;margin-top:4px">${a.name}</strong><span class="pool">${a.pool}</span></button>`;
+    }
+    function open(id) {
+      const a = areas.find(x => x.id === id);
+      close();
+      const back = document.createElement("div");
+      back.className = "drawer-back";
+      back.addEventListener("click", close);
+      const d = document.createElement("aside");
+      d.className = "drawer";
+      d.innerHTML = `<p class="kicker">${a.id} · ${a.place}</p><h2>${a.name}</h2><p><span class="fit ${a.fit}">${a.fit}</span></p>
+        <h3>Situation</h3><p>${a.situation}</p>
+        <h3>Wrong fix</h3><p>${a.wrong}</p>
+        <h3>What they want</h3><p>${a.want}</p>
+        <h3>What Tendex can say</h3><p>${a.offer}</p>
+        <h3>Evidence</h3><p>${a.evidence}</p>
+        <h3>Limit</h3><p>${a.limit}</p>
+        <p><button class="view" type="button" id="close">Close</button></p>`;
+      document.body.append(back, d);
+      d.querySelector("#close").addEventListener("click", close);
+    }
+    function close() {
+      document.querySelectorAll(".drawer,.drawer-back").forEach(n => n.remove());
+    }
+    document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+    [place, problem, fit, q].forEach(el => el.addEventListener("input", draw));
+    document.getElementById("v-col").onclick = () => { setView("v-col"); };
+    document.getElementById("v-table").onclick = () => { setView("v-table"); };
+    function setView(id) {
+      ["v-col","v-table"].forEach(x => document.getElementById(x).setAttribute("aria-pressed", String(x === id)));
+      draw();
+    }
+    draw();
+  </script>
+</body>
+</html>

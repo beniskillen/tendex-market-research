@@ -1,0 +1,33 @@
+{
+  "cutoff": "2026-10-27",
+  "client": "Tendex",
+  "site": "https://tendexterminal.com/",
+  "decision": "Can a useful attention-market workflow attract traders and produce Forum revenue? Venture appetite is a separate question.",
+  "constraint": "evidence",
+  "refused_as_tam": ["WARC_2026_ad_spend_usd", "pew_july_2026_prediction_notional_usd"],
+  "calculations": {
+    "C1_pew_notional_may_2026_usd": 26000000000,
+    "C1_pew_notional_july_2026_usd": 53000000000,
+    "C1_note": "Rounded Pew figures. Taker notional at $1 face. Not cash. Not attention.",
+    "C2_kalshi_sports_share_since_jul_2024": 0.80,
+    "C2_polymarket_sports_share_since_jul_2024": 0.39,
+    "C3_warc_2026_ad_spend_usd": 1340000000000,
+    "C3_warc_2026_social_usd": 394600000000,
+    "C4_placeholder_100_accounts_low_usd": 36000,
+    "C4_placeholder_100_accounts_high_usd": 120000,
+    "C5_placeholder_1000_accounts_low_usd": 360000,
+    "C5_placeholder_1000_accounts_high_usd": 1200000,
+    "C4_C5_note": "Account counts are placeholders. Price band is Oddpool's posted $30 and $100.",
+    "C6_yesnoodds_july_sports_share": 0.79,
+    "C6_yesnoodds_increase_sports_share": 0.88,
+    "C7_ice_polymarket_investment_cap_usd": 2000000000,
+    "C8_yc_standard_deal_usd": 500000
+  },
+  "tendex_public": {
+    "price": null,
+    "users": null,
+    "live_book_on_marketing_page": false,
+    "venues_named_on_hero": ["Polymarket"]
+  },
+  "som_public_revenue_usd": 0
+}
