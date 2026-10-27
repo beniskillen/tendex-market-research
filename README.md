@@ -1,6 +1,6 @@
 # Tendex market research
 
-Internal research file. Cut-off 27 October 2026. Not for publication, and not a message to Leo or Forum.
+Plain-English research file for Ben. Cut-off 27 October 2026. Not a message to Leo or Forum.
 
 Open `index.html` in a browser. The segment explorer is `matrix.html`. The evidence and calculation trail is `control-room.html`, with the same trail in `internal-control-room.md`. Machine-readable figures are in `data/research.json`.
 

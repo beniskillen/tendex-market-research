@@ -10,7 +10,7 @@
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <p class="draft">Research file. 27 October 2026. <strong>Internal.</strong> Pools use different units. Do not add them into one market.</p>
+  <p class="draft">27 October 2026. <strong>For Ben to read.</strong> These groups use different units. Do not add them into one market.</p>
   <header class="nav"><a class="brand" href="index.html"><strong>Tendex</strong><small>Market research</small></a></header>
   <nav class="chapters" aria-label="Report">
     <a href="index.html">Brief</a><a href="matrix.html" aria-current="page">Matrix</a><a href="sizing.html">Sizing</a>
@@ -20,7 +20,7 @@
   <main class="wrap" id="content">
     <p class="kicker">Place, then problem, then the thing they might buy</p>
     <h1>Fourteen areas. Three in the first test.</h1>
-    <p class="lede">Each card is a different pool. A user count, a venue, a notional book and a price band are not the same object. “Now” means the public Tendex page could be useful in a thirty-day test. It does not mean anyone has paid.</p>
+    <p class="lede">Each card is a different group. A user count, an exchange, a pile of bet face-value, and a monthly price are not the same thing. “Now” means the public Tendex page could be useful in a thirty-day test. It does not mean anyone has paid.</p>
     <div class="filters">
       <label class="f">Place<select id="place"><option value="">All</option></select></label>
       <label class="f">Problem<select id="problem"><option value="">All</option></select></label>
@@ -37,27 +37,27 @@
   </main>
   <script>
     const areas = [
-      {id:"US-01", name:"Attention prosumer", place:"United States", problem:"See the oracle", fit:"now", pool:"unpublished", unit:"users", soph:4,
-        situation:"A person who already has a view on whether a topic’s relevance will rise, and wants the price next to the series the contract settles on.",
-        wrong:"A sports terminal, a meme chart, or a Google Trends tab with no tape.",
-        want:"One axis: price, attention, book and trades. More than one venue, labelled.",
-        offer:"The public Tendex page describes this. The marketing demo prints zeros. No price is listed.",
-        evidence:"Primary site, 27 Oct 2026. User count is a gap.",
-        limit:"Useful only where a real attention contract exists. Forum is still simulated."},
+      {id:"US-01", name:"Keen attention trader", place:"United States", problem:"See the score", fit:"now", pool:"unpublished", unit:"users", soph:4,
+        situation:"Someone who already has a view on whether a topic will get more or less attention, and wants the price next to the score the bet pays out on.",
+        wrong:"A sports screen, a meme chart, or a Google Trends tab with no list of trades.",
+        want:"One chart: price, attention, waiting orders and trades. More than one exchange, clearly labelled.",
+        offer:"The public Tendex page describes this. The sample chart prints zeros. No price is listed.",
+        evidence:"The live site, 27 Oct 2026. The user count was not found.",
+        limit:"Useful only where a real attention bet exists. Forum is still on fake money."},
       {id:"US-02", name:"Prediction desk", place:"United States", problem:"Buy the data", fit:"later", pool:"crowded", unit:"substitutes", soph:5,
-        situation:"A trader or builder who already pays for normalised Kalshi and Polymarket history, whale tags, or a better ticket.",
-        wrong:"Another dashboard that repeats the venue’s own page.",
-        want:"One schema, a tape they can replay, and an API. Attention is a nice extra, not the job.",
-        offer:"Oddpool listed $30 and $100, then closed new subscriptions. Polysights, Hashdive, Stand and Betmoar already occupy the workflow.",
+        situation:"A trader or builder who already pays for Kalshi and Polymarket history in one format, big-wallet tags, or a better order ticket.",
+        wrong:"Another dashboard that repeats the exchange’s own page.",
+        want:"One clean feed, a trade list they can replay, and a way for software to pull it. Attention is a nice extra, not the job.",
+        offer:"Oddpool listed $30 and $100, then closed new sign-ups. Polysights, Hashdive, Stand and Betmoar already do this job.",
         evidence:"Oddpool pricing page. Trade press for the other terminals.",
         limit:"No subscriber counts. Do not treat a feature list as revenue."},
-      {id:"US-03", name:"Sports contract trader", place:"United States", problem:"Wrong market", fit:"no", pool:"majority of notional", unit:"not the buyer", soph:2,
-        situation:"The person behind most of the 2026 volume boom. They are trading games.",
-        wrong:"An attention index, a cultural hedge, a Bloomberg analogy.",
+      {id:"US-03", name:"Sports bettor", place:"United States", problem:"Wrong market", fit:"no", pool:"most of the face value", unit:"not the buyer", soph:2,
+        situation:"The person behind most of the 2026 trading boom. They are betting on games.",
+        wrong:"An attention score, a brand hedge, or a Bloomberg comparison.",
         want:"A fast sports ticket. Kalshi and Polymarket already give them one.",
-        offer:"Tendex should not acquire this user. The message would be false.",
-        evidence:"Pew, 23 Sep 2026 and 27 May 2026. Sports is the largest topic; 80% of Kalshi volume since July 2024.",
-        limit:"Notional is face value, not cash staked."},
+        offer:"Tendex should not go after this user. The message would be false.",
+        evidence:"Pew, 23 Sep 2026 and 27 May 2026. Sports is the largest topic. It was 80% of Kalshi trading since July 2024.",
+        limit:"The dollar figure is face value, not cash staked."},
       {id:"US-04", name:"Quant or data buyer", place:"United States", problem:"Buy the data", fit:"later", pool:"unknown", unit:"desks", soph:5,
         situation:"A desk that already buys event probabilities as a sentiment feed. ICE is distributing Polymarket’s.",
         wrong:"Assuming they will buy a startup terminal for a market that is still on paper.",
@@ -72,21 +72,21 @@
         offer:"Forum describes the use. No repeat named hedger was found.",
         evidence:"Forum docs and YC profile, company claim. Gap on customers.",
         limit:"Attention and sales do not have to move together."},
-      {id:"VN-01", name:"Forum paper trader", place:"Forum", problem:"Trade the venue", fit:"now", pool:"unpublished", unit:"simulated accounts", soph:3,
+      {id:"VN-01", name:"Forum practice user", place:"Forum", problem:"Use the exchange", fit:"now", pool:"unpublished", unit:"fake-money accounts", soph:3,
         situation:"Someone using Forum’s fake $1,000 balance to long or short a topic’s Attention Index.",
         wrong:"Reporting their volume as revenue, or their Discord join as demand.",
         want:"A clearer view of why the index moved. Maybe. They may be fine inside Forum.",
         offer:"A Tendex watchlist can be a learning cohort. It cannot be booked as economic value.",
         evidence:"YC profile: fake money, $1,000. Docs: pending DCM/DCO. The ~80 Discord figure is a meeting claim.",
         limit:"Contest rules from February 2026 are historical. Do not describe a live $500 weekly prize."},
-      {id:"VN-02", name:"Noise participant", place:"Noise", problem:"Trade the venue", fit:"later", pool:"1,300", unit:"testnet users, company claim", soph:3,
+      {id:"VN-02", name:"Noise participant", place:"Noise", problem:"Use the exchange", fit:"later", pool:"1,300", unit:"testnet users, company claim", soph:3,
         situation:"People who used the 2025 invite-only testnet, or who would buy trends on the rewritten product.",
         wrong:"Quoting 62% retention as if the current product were the same one.",
         want:"To express a view on relevance. The venue now says you buy the trend.",
         offer:"A terminal in front of Noise only matters if Noise will licence the series and the tape.",
         evidence:"Noise post, 14 Jan 2026, with an editor’s note that the product changed. Paradigm led $7.1m.",
         limit:"1,300 users, 14 markets, 62% still active, 17-minute sessions: company claims about a retired design."},
-      {id:"VN-03", name:"Zora creator market", place:"Zora", problem:"Trade the venue", fit:"no", pool:"own tools", unit:"substitute", soph:3,
+      {id:"VN-03", name:"Zora creator market", place:"Zora", problem:"Use the exchange", fit:"no", pool:"own tools", unit:"substitute", soph:3,
         situation:"A creator or trader already inside Zora’s content markets.",
         wrong:"Treating a creator coin as an attention index.",
         want:"The venue already ships P&L, a CLI and an in-app research agent.",
@@ -100,14 +100,14 @@
         offer:"Do not inherit the ‘evolution of meme coins’ line into the Forum brief.",
         evidence:"Meeting claim, 20 Oct 2026. The instruments are not the same.",
         limit:"A token can be popular and still not track an external index."},
-      {id:"SUB-02", name:"Trends power user", place:"Global", problem:"See the oracle", fit:"no", pool:"free", unit:"substitute", soph:2,
+      {id:"SUB-02", name:"Trends power user", place:"Global", problem:"See the score", fit:"no", pool:"free", unit:"substitute", soph:2,
         situation:"A marketer or trader who already pulls Google Trends for a topic.",
         wrong:"Charging them for a chart they can open for nothing.",
         want:"The series, free. They do not want a tape unless they are already in a contract.",
         offer:"Trends is an input, not the product. Tendex only earns a fee when the series is tied to a tradable contract and a book.",
         evidence:"Google Trends is public. Da, Engelberg, Gao used search volume as a retail-attention proxy, 2004–2008.",
         limit:"Trends is not a licensed oracle. Terms and revision risk sit with Leo, unmarked."},
-      {id:"SUB-03", name:"Crypto mindshare reader", place:"Crypto", problem:"See the oracle", fit:"no", pool:"Kaito and peers", unit:"substitute", soph:3,
+      {id:"SUB-03", name:"Crypto mindshare reader", place:"Crypto", problem:"See the score", fit:"no", pool:"Kaito and peers", unit:"substitute", soph:3,
         situation:"A crypto user who already reads mindshare dashboards.",
         wrong:"Rebuilding Kaito and calling it a terminal for Forum.",
         want:"Narrative heat inside crypto. Different coverage, different buyer.",
@@ -121,7 +121,7 @@
         offer:"Distribution tests stay inside a venue and a geography the venue is allowed to serve. The US is the live book. Australia is not the shortcut.",
         evidence:"Moneysmart, updated 3 Aug 2026. ASIC binary-option ban for retail. ACMA has treated at least one prediction venue as gambling.",
         limit:"This is not a legal opinion. Referral copy still needs a human review before anyone is paid to post."},
-      {id:"PT-01", name:"Forum as a partner", place:"Forum", problem:"Trade the venue", fit:"now", pool:"one company", unit:"partner, not users", soph:4,
+      {id:"PT-01", name:"Forum as a partner", place:"Forum", problem:"Use the exchange", fit:"now", pool:"one company", unit:"partner, not users", soph:4,
         situation:"Owen Botkin and Joseph Thomas. Two-person YC company. Simulated exchange. They may or may not want help acquiring the right paper-traders.",
         wrong:"Leading with influencers, YC loyalty, or a promise of whales.",
         want:"Unknown until they name the bottleneck. Candidates: the right users, repeat use, a data permission, or nothing from an outside terminal.",
@@ -161,15 +161,15 @@
       const now = rows.filter(a => a.fit === "now").length;
       kpis.innerHTML = `
         <div class="kpi"><b>${rows.length}</b><span>Areas in view</span></div>
-        <div class="kpi"><b>${now}</b><span>Fit for a first test</span></div>
-        <div class="kpi"><b>${rows.filter(a => a.fit === "no").length}</b><span>Do not acquire</span></div>
-        <div class="kpi"><b>Not summed</b><span>Pools are different units</span></div>`;
+        <div class="kpi"><b>${now}</b><span>Worth a first test</span></div>
+        <div class="kpi"><b>${rows.filter(a => a.fit === "no").length}</b><span>Do not chase</span></div>
+        <div class="kpi"><b>Not added</b><span>Different kinds of count</span></div>`;
       if (document.getElementById("v-table").getAttribute("aria-pressed") === "true") {
         board.innerHTML = `<div class="table-wrap"><table><thead><tr><th>ID</th><th>Area</th><th>Place</th><th>Problem</th><th>Fit</th><th>Pool</th></tr></thead><tbody>
           ${rows.map(a => `<tr><td>${a.id}</td><td><button class="area" data-id="${a.id}" style="border:0;padding:0">${a.name}</button></td><td>${a.place}</td><td>${a.problem}</td><td><span class="fit ${a.fit}">${a.fit}</span></td><td>${a.pool}</td></tr>`).join("")}
         </tbody></table></div>`;
       } else {
-        const cols = ["See the oracle", "Trade the venue", "Buy the data", "Hedge a brand", "Wrong market"];
+        const cols = ["See the score", "Use the exchange", "Buy the data", "Hedge a brand", "Wrong market"];
         board.innerHTML = `<div class="columns">${cols.map(c => `<section class="col"><h3>${c}</h3>${rows.filter(a => a.problem === c).map(card).join("") || "<p class='note'>None in view.</p>"}</section>`).join("")}</div>`;
       }
       board.querySelectorAll("[data-id]").forEach(btn => btn.addEventListener("click", () => open(btn.dataset.id)));

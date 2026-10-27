@@ -1,47 +1,47 @@
-# Tendex internal control room
+# Tendex working file
 
-Cut-off 27 October 2026. If a chapter disagrees with this file, this file wins until the chapter is corrected. Internal. Not a Forum proposal and not an accepted co-founder agreement.
+Cut-off 27 October 2026. If a chapter disagrees with this file, this file wins until the chapter is fixed. For Ben to read. Not a proposal to Forum, and not a signed co-founder deal.
 
-## Decision
+## The question
 
-Can Tendex attract a relevant trader through a useful attention-market workflow, and can that produce revenue through a Forum partnership? A venture case is a separate question. Forum enthusiasm is not investor demand.
+Can Tendex attract the right trader with a useful attention-market screen, and can that bring in money through Forum? Whether investors would fund it is a separate question. Forum being keen is not the same as investors being keen.
 
-Constraint: evidence. The category is public. The buyer, the data right, the live tape, and Forum’s bottleneck are not.
+What is missing is proof. The category is public. The buyer, the right to use the data, a live trade list, and Forum’s actual problem are not.
 
-Ben’s own constraint: a capped unpaid trial. Hours, cash, IP and the stop date are not yet agreed with Leo.
+Ben’s own limit is a short unpaid trial with a cap. Hours, cash, who owns the work, and the stop date are not yet agreed with Leo.
 
-## What survives
+## What still holds
 
-- Attention contracts are a named category. Forum (YC W26) publishes an index from search, social and streaming and is still on simulated money. Noise raised a $7.1 million Paradigm-led seed, then changed the product.
-- A terminal is not the venue. Oddpool posted $0, $30 and $100 plans for prediction-market data, then closed new subscriptions and is joining Kalshi. YC lists Oddpool inactive.
-- Search attention and short-horizon stock returns are a real result: Da, Engelberg and Gao, Journal of Finance, October 2011. Russell 3000, 2004–2008. Rise, then reversal within a year. It is not a Federal Reserve paper.
-- ICE’s 8-K of 7 October 2025: up to $2 billion into Polymarket, and ICE distributes the event data. Adjacent. Not an attention-index terminal.
+- Attention bets are a real category other people have named. Forum, from Y Combinator’s winter 2026 batch, publishes a score from search, social posts and streams, and is still on fake money. Noise raised $7.1 million led by Paradigm, then changed the product.
+- A reading screen is not the exchange. Oddpool posted free, $30 and $100 plans for prediction-market data, then closed new sign-ups and is joining Kalshi. Y Combinator lists Oddpool as inactive.
+- Search and short-term stock prices are a real result: Da, Engelberg and Gao, Journal of Finance, October 2011. Russell 3000 stocks, 2004 to 2008. Prices rose, then fell back within a year. It is not a Federal Reserve paper.
+- ICE’s filing of 7 October 2025: up to $2 billion into Polymarket, and ICE sells the event data. That is a nearby market. It is not an attention-score screen.
 
-## What does not survive
+## What does not hold
 
-- July 2026’s $53 billion combined Kalshi and Polymarket notional (Pew, of The Block, up from $26 billion in May) as Tendex’s market. It is contract face value. Sports is the book: 80% of Kalshi volume and 39% of Polymarket volume since July 2024 (Pew, 27 May 2026).
-- WARC’s $1.34 trillion 2026 ad-spend forecast as TAM. That is advertiser spend. Social is $394.6 billion of it.
-- “One to five users, then YC must fund a Forum complement.” YC’s standard deal is $500,000. It is not a complement rule. The meeting’s ~$5 million Forum raise was not found.
-- Jane Street and Jump as the first buyer. Unobserved. A student contest is not a software contract.
-- “A terminal sidesteps Australian law.” Moneysmart (3 August 2026): no prediction-market operator is licensed as a financial market in Australia. Do not recruit Australians into Polymarket in the test.
-- Equal equity and full-time after funding. Meeting proposals. Not accepted on the 26 October client note.
+- July 2026’s $53 billion of Kalshi and Polymarket bets, from Pew using The Block, up from $26 billion in May, as Tendex’s market. It is face value, not cash. Sports is the book: 80% of Kalshi and 39% of Polymarket since July 2024.
+- WARC’s $1.34 trillion 2026 ad forecast as Tendex’s market. That is what advertisers spend. Social ads are $394.6 billion of it.
+- “One to five users, then Y Combinator must fund a tool for Forum.” Y Combinator’s standard deal is $500,000. It is not a rule about funding neighbouring tools. The meeting’s claim of a roughly $5 million Forum raise was not found.
+- Jane Street and Jump as the first buyer. Not seen. A student contest is not a software contract.
+- “A screen gets around Australian law.” Moneysmart, 3 August 2026: no prediction-market operator is licensed as a financial market in Australia. Do not recruit Australians into Polymarket in the test.
+- Equal shares and full-time work after funding. Ideas from the meeting. Not accepted in the 26 October note.
 
-## Arithmetic
+## The sums
 
-- C4: 100 placeholder accounts × $30 to $100 × 12 = $36,000 to $120,000 a year.
-- C5: 1,000 placeholder accounts × the same band = $0.36 million to $1.2 million a year.
-- The account counts are not a forecast. SOM in public Tendex revenue is zero.
+- C4: 100 made-up accounts times $30 to $100 times 12 months is $36,000 to $120,000 a year.
+- C5: 1,000 made-up accounts on the same prices is $0.36 million to $1.2 million a year.
+- The account counts are not a forecast. Public Tendex revenue is zero.
 
-## Empty on purpose
+## Left blank on purpose
 
-Live tape, API reliability, data licence, Forum weekly actives, Forum funding above the YC cheque, Noise real-money volume, Oddpool subscriber count, DCM docket, Google Trends commercial rights.
+A live trade list, whether the data feed works, the right to use the data, Forum’s weekly users, Forum’s funding above the Y Combinator cheque, Noise’s real-money trading, Oddpool’s subscriber count, a US licence filing, and the right to sell Google Trends as a score.
 
 ## First move
 
-Agree the cap. Leo shows one non-zero market with its series. One Forum question: what is the bottleneck, what is a useful action, who can date a two-week test. No paid KOL in that step.
+Agree the cap. Leo shows one market that is not zero, with its score. One question for Forum: what is stuck, what counts as a useful action, and who can put a date on a two-week test. Do not pay an influencer in that step.
 
-Pass: a named bottleneck Tendex can touch, and three unpaid traders attempt the overlay. Hold: mock chart or a polite non-answer. Stop: the only ask is unpaid signups. A services offer can be priced later under its own name.
+Pass: Forum names a problem Tendex can help with, and three unpaid traders try the chart. Hold: the chart is still a sample, or the answer is polite and vague. Stop: the only ask is unpaid signups. A paid service can be priced later, under its own name.
 
-## Gates still closed
+## Still needs a person to decide
 
-Time cap and IP with Leo. Data rights. Any regulatory sentence sent outward. Sending this file to Leo, Forum, investors, or a public host. Writing it back to Notion.
+The time cap and ownership with Leo. Data rights. Any legal sentence sent outward. Sending this file to Leo, Forum, or investors. Writing it back to Notion.
